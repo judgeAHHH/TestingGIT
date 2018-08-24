@@ -463,11 +463,11 @@ function sendConfirmation(){
 	/*
 		Data needed for the exchange between the pVideo and the landing page
 		@param nome holds the name of the user
-        @param email holds the email of the user
-        @param cellulare holds the telephone of the user
-        @param codiceCliente holds the client's code of the user
-        @param codiceFiscale holds the fiscal code of the user
-        @param account
+       		@param email holds the email of the user
+        	@param cellulare holds the telephone of the user
+        	@param codiceCliente holds the client's code of the user
+        	@param codiceFiscale holds the fiscal code of the user
+        	@param account
 	*/
 	
 	var nome = lib.injectedData.docData.FILE.DOCUMENT[0].TEMPLATE[0].CUSTOMER_DATA[0].NOME;
@@ -478,8 +478,8 @@ function sendConfirmation(){
 	var account = "";
 	
 	/* 
-        IF condition that checks if the pvideo is in a TEST or PRODUCTION environment
-    */	
+        	IF condition that checks if the pvideo is in a TEST or PRODUCTION environment
+    	*/	
 	
 	if(lib.injectedData.docData.FILE.DOCUMENT[0].TEMPLATE[0].CUSTOMER_DATA[0].Ambiente == "TEST")
 		account ="end_u_iren_test";
